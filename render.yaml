@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: europay-backend
+    env: node
+    plan: starter
+    region: oregon
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
